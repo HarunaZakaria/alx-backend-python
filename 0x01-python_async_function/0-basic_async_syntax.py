@@ -12,4 +12,4 @@ async def wait_random(max_delay=10)-> float:
     "wait for a while"
     time_wait = random.random(0, max_delay)
     await asyncio.sleep(time_wait)
-    print("time_wait") 
+    return time_wait
